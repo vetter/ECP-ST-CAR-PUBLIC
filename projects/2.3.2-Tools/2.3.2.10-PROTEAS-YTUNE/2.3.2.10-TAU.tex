@@ -18,17 +18,17 @@ Scalable Heterogeneous Computing (SHC) platforms are gaining popularity, but it 
 
 \paragraph{Recent Progress}
 \begin{enumerate}
-% Sameer update this?
-\item \textbf{CANDLE} Extended TAU to enhance performance evaluation of multii-threaded Python3 and CUDA and applied it to evaluate the performance of the CANDLE ECP Benchmarks.
+\item \textbf{CANDLE} Extended TAU to enhance performance evaluation of multi-threaded Python3 and CUDA and applied it to evaluate the performance of the CANDLE ECP Benchmarks. TAU was extended to provide support for sampling with Python and CUDA. 
 
 % Kevin updated this
-\item \textbf{Improved CUDA and OpenMP support} Updated support for CUDA and OpenCL measurement, organizing data around streams and command queues for robust multithreaded support.  Further updated the OpenMP Tools Interface support in TAU, to support the now released 5.0 standard. 
+\item \textbf{Improved CUDA and OpenMP support} Updated support for CUDA and OpenCL measurement, organizing data around streams and command queues for robust multithreaded support.  Further updated the OpenMP Tools Interface support in TAU, to support the now released 5.0 standard. This OMPT v5.0 standard is currently supported in Intel v19 and Clang v8 compilers. 
 
 % Kevin updated this
 \item \textbf{Flang Instrumentation} TAU support for the Flang Fortran compiler was added.  PDT- and Compiler-based instrumentation support for Flang was implemented and tested on x86\_64 Linux platforms.
 
-% Sameer update this?  Maybe mention ROCm support instead?
 \item \textbf{AMReX} TAU OpenACC measurement was demonstrated on the AMReX library.
+
+\item \textbf{HIP} TAU's measurement library was extended to support the AMD GPU architecture. Specifically, TAU was extended to support HIP, ROCTracer, and ROCProfiler APIs under ROCm.
 
 % Kevin updated this
 \item \textbf{CODAR} TAU plugin for streaming profile and trace output to ADIOS2 for realtime application monitoring.  Integrated with Chimbuko framework for runtime trace analysis, demonstrated with NWChem on Summit using 2000+ MPI ranks.
@@ -47,19 +47,19 @@ Implement new Profiling API and Perfworks Metrics API for CUDA/CUPTI 10+ to repl
 \item \textbf{OpenMP and OpenACC Enhancements} 
 Explore and implement prototype measurement for OpenMP and OpenACC regions executed on target devices.
 
-% Sameer update this? Should we drop mention of NVM?
 \item \textbf{NVM instrumentation} 
-Design and implement support for supporting deep memory hierarchies in TAU for supporting MCDRAM based systems. 
+Design and implement support for supporting deep memory hierarchies in TAU for supporting MCDRAM based systems. Hardware performance counter measurements were enabled using PAPI and LIKWID toolkits.
 
-% Sameer update this?
 \item \textbf{NVM Measurement} 
-Comprehensive profiling and tracing support for NVM architectures.
+Added profiling and tracing support for NVM architectures.
 
-% Sameer update this?
 \item \textbf{PHIRE} 
-Improved LLVM IR-based instrumentation using PHIRE.
+Improved LLVM IR-based selective instrumentation in TAU at the routine level using PHIRE using a TAU plugin.
 
-% Sameer update this?
 \item \textbf{Outreach}
-Continued outreach activities to demonstrate comprehensive performance evaluation support in TAU for OpenARC, LLVM, CUDA, Kokkos, ROCm, and NVM based programming frameworks for SHC platforms. 
+Continued outreach activities to demonstrate comprehensive performance evaluation support in TAU for OpenARC, OpenACC, LLVM compiler-based instrumentation, CUDA, Kokkos, ROCm, and NVM based programming frameworks for SHC platforms. 
+
+\item \textbf{E4S} 
+Improved integration of TAU in the E4S. 
+
 \end{enumerate}

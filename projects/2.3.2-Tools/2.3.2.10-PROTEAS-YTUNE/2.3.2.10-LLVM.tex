@@ -62,14 +62,16 @@ In a more forward looking approach we prototyped a loop-hierarchical IR for
 LLVM which we also present and discuss in various LLVM community forums.
 
 To facilitate autotuning (ref. Section \ref{sec:PROTEAS_TUNE_AUTOTUNING}), we
-implemented a loop nest information extraction tool for LLVM-IR.
+implemented a loop nest information extraction tool for
+LLVM-IR~\cite{kruse2020search}.
 
 We have developed a prototype C++ compiler, based on Clang, supporting an
 extension that enables programmers to embed (domain specific) languages inside
-their ``C-like'' programs. That is, we allow a new type of Clang plugin to bridge
-the gap between classical code, e.g., C or C++, and code written in a different
-language, e.g., a quantum or tensor domain specific language (DSL). The latter
-two examples have been successfully prototyped as well.
+their ``C-like'' programs~\cite{finkel2020dsl}. That is, we allow a new type of
+Clang plugin to bridge the gap between classical code, e.g., C or C++, and code
+written in a different language, e.g., a quantum or tensor domain specific
+language (DSL). The latter two examples have been successfully prototyped as
+well.
 
 All our efforts have also been featured in many talks, tutorials, and so on at
 LLVM developers' meetings over the last couple of years.
